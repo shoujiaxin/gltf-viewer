@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2961136226BAF82000D8E7AC /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2961136126BAF82000D8E7AC /* GLTFSceneKit */; };
+		2961136C26BAFD7200D8E7AC /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961136B26BAFD7200D8E7AC /* ModelView.swift */; };
+		2961136F26BAFD9F00D8E7AC /* ModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961136E26BAFD9F00D8E7AC /* ModelLoader.swift */; };
 		29946A3126BAD1C000CABD02 /* glTFViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29946A3026BAD1C000CABD02 /* glTFViewerApp.swift */; };
 		29946A3326BAD1C000CABD02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29946A3226BAD1C000CABD02 /* ContentView.swift */; };
 		29946A3526BAD1C100CABD02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29946A3426BAD1C100CABD02 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2961136B26BAFD7200D8E7AC /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
+		2961136E26BAFD9F00D8E7AC /* ModelLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLoader.swift; sourceTree = "<group>"; };
 		29946A2D26BAD1C000CABD02 /* glTFViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glTFViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29946A3026BAD1C000CABD02 /* glTFViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glTFViewerApp.swift; sourceTree = "<group>"; };
 		29946A3226BAD1C000CABD02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2961136A26BAFD4D00D8E7AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29946A3226BAD1C000CABD02 /* ContentView.swift */,
+				2961136B26BAFD7200D8E7AC /* ModelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2961136D26BAFD7C00D8E7AC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2961136E26BAFD9F00D8E7AC /* ModelLoader.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		29946A2426BAD1C000CABD02 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				29946A3026BAD1C000CABD02 /* glTFViewerApp.swift */,
-				29946A3226BAD1C000CABD02 /* ContentView.swift */,
+				2961136A26BAFD4D00D8E7AC /* Views */,
+				2961136D26BAFD7C00D8E7AC /* ViewModels */,
 				29946A3426BAD1C100CABD02 /* Assets.xcassets */,
 				29946A3926BAD1C100CABD02 /* Info.plist */,
 				29946A3A26BAD1C100CABD02 /* glTFViewer.entitlements */,
@@ -269,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2961136F26BAFD9F00D8E7AC /* ModelLoader.swift in Sources */,
+				2961136C26BAFD7200D8E7AC /* ModelView.swift in Sources */,
 				29946A3326BAD1C000CABD02 /* ContentView.swift in Sources */,
 				29946A3126BAD1C000CABD02 /* glTFViewerApp.swift in Sources */,
 			);
