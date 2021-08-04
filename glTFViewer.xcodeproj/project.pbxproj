@@ -10,6 +10,7 @@
 		2961136226BAF82000D8E7AC /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2961136126BAF82000D8E7AC /* GLTFSceneKit */; };
 		2961136C26BAFD7200D8E7AC /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961136B26BAFD7200D8E7AC /* ModelView.swift */; };
 		2961136F26BAFD9F00D8E7AC /* ModelLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2961136E26BAFD9F00D8E7AC /* ModelLoader.swift */; };
+		2961137A26BB0A5900D8E7AC /* Preview Scenes.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2961137926BB0A5900D8E7AC /* Preview Scenes.scnassets */; };
 		29946A3126BAD1C000CABD02 /* glTFViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29946A3026BAD1C000CABD02 /* glTFViewerApp.swift */; };
 		29946A3326BAD1C000CABD02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29946A3226BAD1C000CABD02 /* ContentView.swift */; };
 		29946A3526BAD1C100CABD02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29946A3426BAD1C100CABD02 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		2961136B26BAFD7200D8E7AC /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
 		2961136E26BAFD9F00D8E7AC /* ModelLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLoader.swift; sourceTree = "<group>"; };
+		2961137926BB0A5900D8E7AC /* Preview Scenes.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = "Preview Scenes.scnassets"; sourceTree = "<group>"; };
 		29946A2D26BAD1C000CABD02 /* glTFViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glTFViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29946A3026BAD1C000CABD02 /* glTFViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glTFViewerApp.swift; sourceTree = "<group>"; };
 		29946A3226BAD1C000CABD02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				29946A3726BAD1C100CABD02 /* Preview Assets.xcassets */,
+				2961137926BB0A5900D8E7AC /* Preview Scenes.scnassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2961137A26BB0A5900D8E7AC /* Preview Scenes.scnassets in Resources */,
 				29946A3826BAD1C100CABD02 /* Preview Assets.xcassets in Resources */,
 				29946A3526BAD1C100CABD02 /* Assets.xcassets in Resources */,
 			);
