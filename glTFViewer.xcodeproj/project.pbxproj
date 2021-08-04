@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2961136226BAF82000D8E7AC /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2961136126BAF82000D8E7AC /* GLTFSceneKit */; };
 		29946A3126BAD1C000CABD02 /* glTFViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29946A3026BAD1C000CABD02 /* glTFViewerApp.swift */; };
 		29946A3326BAD1C000CABD02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29946A3226BAD1C000CABD02 /* ContentView.swift */; };
 		29946A3526BAD1C100CABD02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29946A3426BAD1C100CABD02 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2961136226BAF82000D8E7AC /* GLTFSceneKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +150,9 @@
 			dependencies = (
 			);
 			name = glTFViewer;
+			packageProductDependencies = (
+				2961136126BAF82000D8E7AC /* GLTFSceneKit */,
+			);
 			productName = glTFViewer;
 			productReference = 29946A2D26BAD1C000CABD02 /* glTFViewer.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +224,9 @@
 				Base,
 			);
 			mainGroup = 29946A2426BAD1C000CABD02;
+			packageReferences = (
+				2961136026BAF82000D8E7AC /* XCRemoteSwiftPackageReference "GLTFSceneKit" */,
+			);
 			productRefGroup = 29946A2E26BAD1C000CABD02 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -585,6 +593,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2961136026BAF82000D8E7AC /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/magicien/GLTFSceneKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2961136126BAF82000D8E7AC /* GLTFSceneKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2961136026BAF82000D8E7AC /* XCRemoteSwiftPackageReference "GLTFSceneKit" */;
+			productName = GLTFSceneKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29946A2526BAD1C000CABD02 /* Project object */;
 }
