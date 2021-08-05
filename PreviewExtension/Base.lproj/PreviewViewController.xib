@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.SceneKitIBPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreviewViewController" customModule="PreviewExtension" customModuleProvider="target">
+            <connections>
+                <outlet property="sceneView" destination="8Cw-h9-w4c" id="Quf-If-MkV"/>
+                <outlet property="view" destination="c22-O7-iKe" id="NRM-P4-wb6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" userLabel="Preview View">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <sceneView translatesAutoresizingMaskIntoConstraints="NO" id="8Cw-h9-w4c">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                </sceneView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="8Cw-h9-w4c" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="9BI-Od-y3n"/>
+                <constraint firstAttribute="bottom" secondItem="8Cw-h9-w4c" secondAttribute="bottom" id="U2J-wO-MLk"/>
+                <constraint firstAttribute="trailing" secondItem="8Cw-h9-w4c" secondAttribute="trailing" id="e8Y-l7-pFm"/>
+                <constraint firstItem="8Cw-h9-w4c" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="yBu-kV-tCw"/>
+            </constraints>
+            <point key="canvasLocation" x="81" y="154"/>
+        </customView>
+    </objects>
+</document>
