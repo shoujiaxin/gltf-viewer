@@ -20,7 +20,7 @@ struct ModelView: View {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle())
         } else {
-            SceneView(scene: loader.scene, pointOfView: nil, options: .allowsCameraControl, preferredFramesPerSecond: 60, antialiasingMode: .none, delegate: nil, technique: nil)
+            SceneView(scene: loader.scene, pointOfView: nil, options: [.allowsCameraControl, .autoenablesDefaultLighting], preferredFramesPerSecond: 60, antialiasingMode: .multisampling16X, delegate: nil, technique: nil)
         }
     }
 }
