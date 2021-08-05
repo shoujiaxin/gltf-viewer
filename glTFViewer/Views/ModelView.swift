@@ -27,7 +27,7 @@ struct ModelView: View {
 
 struct ModelView_Previews: PreviewProvider {
     static var previews: some View {
-        ModelView(url: URL(fileURLWithPath: "Preview Scene.scnassets/PrimaryIonDrive.glb", relativeTo: Bundle.main.resourceURL))
+        ModelView(url: URL(fileURLWithPath: "Preview Scenes.scnassets/PrimaryIonDrive.glb", relativeTo: Bundle.main.resourceURL))
             .frame(width: 500, height: 500)
     }
 }
