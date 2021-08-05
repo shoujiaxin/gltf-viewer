@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct glTFViewerApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        DocumentGroup(viewing: ModelDocument.self) { file in
+            ModelView(url: file.fileURL)
                 .frame(minWidth: minWindowWidth, minHeight: minWindowHeight)
                 .toolbar {
                     Button(action: {}) {
