@@ -20,7 +20,7 @@ class PreviewViewController: NSViewController, QLPreviewingController {
     override func loadView() {
         super.loadView()
 
-        sceneView.allowsCameraControl = false
+        sceneView.allowsCameraControl = true
         sceneView.autoenablesDefaultLighting = true
         sceneView.backgroundColor = .clear
     }
