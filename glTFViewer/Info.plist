@@ -7,6 +7,8 @@
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeIconSystemGenerated</key>
+			<integer>1</integer>
 			<key>CFBundleTypeName</key>
 			<string>GLB File</string>
 			<key>CFBundleTypeRole</key>
@@ -19,6 +21,8 @@
 			</array>
 		</dict>
 		<dict>
+			<key>CFBundleTypeIconSystemGenerated</key>
+			<integer>1</integer>
 			<key>CFBundleTypeName</key>
 			<string>glTF File</string>
 			<key>CFBundleTypeRole</key>
@@ -57,7 +61,12 @@
 			<key>UTTypeDescription</key>
 			<string>GLB File</string>
 			<key>UTTypeIcons</key>
-			<dict/>
+			<dict>
+				<key>UTTypeIconBadgeName</key>
+				<string>DocumentIcon</string>
+				<key>UTTypeIconText</key>
+				<string>glb</string>
+			</dict>
 			<key>UTTypeIdentifier</key>
 			<string>public.glb</string>
 			<key>UTTypeTagSpecification</key>
@@ -76,7 +85,12 @@
 			<key>UTTypeDescription</key>
 			<string>glTF File</string>
 			<key>UTTypeIcons</key>
-			<dict/>
+			<dict>
+				<key>UTTypeIconBadgeName</key>
+				<string>DocumentIcon</string>
+				<key>UTTypeIconText</key>
+				<string>gltf</string>
+			</dict>
 			<key>UTTypeIdentifier</key>
 			<string>public.gltf</string>
 			<key>UTTypeTagSpecification</key>
