@@ -9,6 +9,8 @@ import SceneKit
 import SwiftUI
 
 struct ModelView: View {
+    @Environment(\.colorScheme) private var colorScheme
+
     @ObservedObject private var loader: ModelLoader
 
     init(url: URL?) {
@@ -20,8 +22,17 @@ struct ModelView: View {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle())
         } else {
-            SceneView(scene: loader.scene, pointOfView: nil, options: [.allowsCameraControl, .autoenablesDefaultLighting], preferredFramesPerSecond: 60, antialiasingMode: .multisampling16X, delegate: nil, technique: nil)
+            SceneView(scene: scene(), pointOfView: nil, options: [.allowsCameraControl, .autoenablesDefaultLighting], preferredFramesPerSecond: 60, antialiasingMode: .multisampling16X, delegate: nil, technique: nil)
         }
+    }
+
+    func scene() -> SCNScene? {
+        guard let scene = loader.scene else {
+            return nil
+        }
+
+        scene.background.contents = colorScheme == .dark ? NSColor.windowBackgroundColor : NSColor.white
+        return scene
     }
 }
 

@@ -16,6 +16,7 @@ struct glTFViewerApp: App {
                 .toolbar {
                     Button(action: {}) {
                         Image(systemName: "gearshape")
+                            .foregroundColor(.primary)
                     }
                 }
         }
