@@ -20,7 +20,7 @@
 		29F69C5E26BC4CF800CF0016 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F69C5D26BC4CF800CF0016 /* Quartz.framework */; };
 		29F69C6126BC4CF800CF0016 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F69C6026BC4CF800CF0016 /* PreviewViewController.swift */; };
 		29F69C6426BC4CF800CF0016 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F69C6226BC4CF800CF0016 /* PreviewViewController.xib */; };
-		29F69C6926BC4CF900CF0016 /* PreviewExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 29F69C5B26BC4CF800CF0016 /* PreviewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		29F69C6926BC4CF900CF0016 /* glTF Preview.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 29F69C5B26BC4CF800CF0016 /* glTF Preview.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		29F69C6F26BC4EBB00CF0016 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 29F69C6E26BC4EBB00CF0016 /* GLTFSceneKit */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				29F69C6926BC4CF900CF0016 /* PreviewExtension.appex in Embed App Extensions */,
+				29F69C6926BC4CF900CF0016 /* glTF Preview.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,7 +79,7 @@
 		29946A4A26BAD1C100CABD02 /* glTFViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glTFViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29946A4E26BAD1C100CABD02 /* glTFViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glTFViewerUITests.swift; sourceTree = "<group>"; };
 		29946A5026BAD1C100CABD02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29F69C5B26BC4CF800CF0016 /* PreviewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PreviewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F69C5B26BC4CF800CF0016 /* glTF Preview.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "glTF Preview.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F69C5D26BC4CF800CF0016 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		29F69C6026BC4CF800CF0016 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		29F69C6326BC4CF800CF0016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreviewViewController.xib; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 				29946A2D26BAD1C000CABD02 /* glTFViewer.app */,
 				29946A3F26BAD1C100CABD02 /* glTFViewerTests.xctest */,
 				29946A4A26BAD1C100CABD02 /* glTFViewerUITests.xctest */,
-				29F69C5B26BC4CF800CF0016 /* PreviewExtension.appex */,
+				29F69C5B26BC4CF800CF0016 /* glTF Preview.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 				29F69C6E26BC4EBB00CF0016 /* GLTFSceneKit */,
 			);
 			productName = PreviewExtension;
-			productReference = 29F69C5B26BC4CF800CF0016 /* PreviewExtension.appex */;
+			productReference = 29F69C5B26BC4CF800CF0016 /* glTF Preview.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -318,7 +318,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					29946A2C26BAD1C000CABD02 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -585,6 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = glTFViewer/glTFViewer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -612,6 +613,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = glTFViewer/glTFViewer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -720,6 +722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PreviewExtension/PreviewExtension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
@@ -732,7 +735,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.glTFViewer.PreviewExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "glTF Preview";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -742,6 +745,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PreviewExtension/PreviewExtension.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8TA5C5ASM9;
@@ -754,7 +758,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jiaxin.glTFViewer.PreviewExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "glTF Preview";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
